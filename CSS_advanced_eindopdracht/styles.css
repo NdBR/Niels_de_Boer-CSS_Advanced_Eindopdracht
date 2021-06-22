@@ -1,0 +1,342 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.Testimonial__footer__img {
+  border-radius: 50%;
+  border: #fff solid 5px;
+  width: 130px;
+  height: 130px;
+  margin-top: -60px;
+  background: #fff;
+}
+
+.testimonial {
+  min-width: 330px;
+  max-width: 380px;
+  height: 500px;
+  background-color: #fff;
+  box-shadow: 4px 2px 4px gray;
+  margin: 5px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.testimonial___header {
+  height: 300px;
+  box-sizing: border-box;
+  padding: 40px 40px 80px;
+  text-align: left;
+  line-height: 1.5em;
+  font-size: 20px;
+}
+.testimonial__footer {
+  box-sizing: border-box;
+  background: #686de0;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+.testimonial__footer h1 {
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+.testimonial__footer p {
+  margin-top: 5px;
+  opacity: 0.5;
+}
+.testimonial__footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.testimonial__whenhover {
+  background: #0b0b75;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s ease-in-out, opacity 1s ease-in-out;
+}
+.testimonial__whenhover button {
+  height: 30px;
+  font-weight: bold;
+}
+
+.wrap {
+  position: relative;
+}
+
+.wrap:hover .testimonial__whenhover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+a {
+  color: #fff;
+  font-size: 20px;
+  display: block;
+}
+
+.blog {
+  background-color: #e17b77;
+  bottom: 300px;
+  position: fixed;
+  display: flex;
+  right: -215px;
+  height: 40px;
+  width: 270px;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  text-align: center;
+}
+.blog:hover {
+  right: 0px;
+  transition: 0.5s ease-in-out;
+}
+
+.fa-laptop-code::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  color: #fff;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.twitter {
+  background-color: #00aced;
+  bottom: 260px;
+  position: fixed;
+  display: flex;
+  right: -215px;
+  height: 40px;
+  width: 270px;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  text-align: center;
+}
+.twitter:hover {
+  right: 0px;
+  transition: 0.5s ease-in-out;
+}
+
+.fa-twitter::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "";
+  font-size: 20px;
+  margin: 20px;
+}
+
+.linkin {
+  background-color: #007bb6;
+  bottom: 220px;
+  position: fixed;
+  display: flex;
+  right: -215px;
+  height: 40px;
+  width: 270px;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  text-align: center;
+}
+.linkin:hover {
+  right: 0px;
+  transition: 0.5s ease-in-out;
+}
+
+.fa-linkedin-in::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "";
+  font-size: 20px;
+  margin: 20px;
+}
+
+.facebook {
+  background-color: #3b5998;
+  bottom: 180px;
+  position: fixed;
+  display: flex;
+  right: -215px;
+  height: 40px;
+  width: 270px;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  text-align: center;
+}
+.facebook:hover {
+  right: 0px;
+  transition: 0.5s ease-in-out;
+}
+
+.fa-facebook-f::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "";
+  font-size: 20px;
+  margin: 20px;
+  margin-left: 25px;
+}
+
+.github {
+  background-color: #333;
+  bottom: 140px;
+  position: fixed;
+  display: flex;
+  right: -215px;
+  height: 40px;
+  width: 270px;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  text-align: center;
+}
+.github:hover {
+  right: 0px;
+  transition: 0.5s ease-in-out;
+}
+
+.fa-github::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "";
+  font-size: 20px;
+  margin: 20px;
+}
+
+body {
+  height: 100%;
+  background: #c3cfe2;
+}
+
+.grid-a {
+  grid-area: a;
+}
+
+.grid-b {
+  grid-area: b;
+}
+
+.grid-c {
+  grid-area: c;
+}
+
+.grid-d {
+  grid-area: d;
+}
+
+.grid-e {
+  grid-area: e;
+}
+
+.grid-f {
+  grid-area: f;
+}
+
+.grid-g {
+  grid-area: g;
+}
+
+.grid-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
+}
+
+/* grid tablet */
+@media screen and (min-width: 788px) {
+  .grid-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "a b" "c d" "e f" "g .";
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "a b c" "d e f" "g . .";
+  }
+}/*# sourceMappingURL=styles.css.map */

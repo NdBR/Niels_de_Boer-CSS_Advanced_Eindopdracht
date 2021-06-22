@@ -1,0 +1,103 @@
+a{ 
+    color: $color-white;
+    font-size:$standard-fontsize;
+    display: block;
+}
+
+// blog
+
+.blog{
+    background-color: $color-blog;
+    bottom: 300px;
+    @include social-media__button;
+    @include flex-left;
+    
+    &:hover {
+       @include social-media__button-slide;
+  }
+}
+.fa-laptop-code::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f5fc";
+    color: $color-white;
+    font-size: $standard-fontsize;
+    margin:$margin-logo-wiget;
+}
+
+// twitter
+
+.twitter{
+    background-color: $color-twitter;
+    bottom: 260px;
+    @include social-media__button;
+    @include flex-left;
+
+    &:hover {
+       @include social-media__button-slide;
+  }
+}
+.fa-twitter::before{
+    font-family: "Font Awesome 5 Brands"; 
+    content: "\f099";
+    font-size: $standard-fontsize;
+    margin:$margin-logo-wiget; 
+}
+
+// linkedin
+
+.linkin{
+    background-color: $color-linkedin;
+    bottom: 220px;
+    @include social-media__button;
+    @include flex-left;
+ 
+    &:hover {
+       @include social-media__button-slide;
+  }
+}
+.fa-linkedin-in::before{
+    font-family: "Font Awesome 5 Brands"; 
+    content: "\f0e1";
+    font-size: $standard-fontsize;
+    margin:$margin-logo-wiget;
+}
+
+// facebook
+
+.facebook{
+    background-color: $color-facebook;
+    bottom: 180px;
+    @include social-media__button;
+    @include flex-left;
+ 
+    &:hover {
+       @include social-media__button-slide;
+  }
+}
+.fa-facebook-f::before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f39e";
+    font-size: $standard-fontsize;
+    margin:$margin-logo-wiget;
+    margin-left: 25px;   
+}
+
+// github
+
+.github{
+    background-color: $color-github;
+    bottom: 140px;
+    @include social-media__button;
+    @include flex-left;
+ 
+    &:hover {
+       @include social-media__button-slide;
+  }
+}
+.fa-github::before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f09b";
+    font-size: $standard-fontsize;
+    margin:$margin-logo-wiget;
+}
